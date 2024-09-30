@@ -20,7 +20,7 @@ function reconstructUrl({ url }: { url: string[] }) {
 const Page = async ({ params }: PageProps) => {
   const sessionCookie = cookies().get("sessionId")?.value;
   const reconstructedUrl = reconstructUrl({ url: params.url as string[] });
-
+  console.log(reconstructedUrl + " re url");
   const sessionId = (reconstructedUrl + "--" + sessionCookie).replace(
     /\//g,
     ""

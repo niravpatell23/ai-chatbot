@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  experimental: {
+    outputFileTracingIncludes: { "/api/**/*": ["./node_modules/**/*.wasm"] },
+  },
+};
 
 export default nextConfig;
