@@ -26,6 +26,7 @@ export default function Main() {
       // Append the input URL to the current URL
       console.log("inputUrl ", inputUrl);
       const newUrl = `${"https://getbothelp.vercel.app/"}/${inputUrl}`;
+      // const newUrl = `${"http://localhost:3000/"}/${inputUrl}`;
       console.log("newUrl ", newUrl);
       router.push(newUrl); // Navigate to the new URL
     }
