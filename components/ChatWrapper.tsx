@@ -13,7 +13,7 @@ export const ChatWrapper = ({
 }) => {
   const { messages, handleInputChange, handleSubmit, input, setInput } =
     useChat({
-      api: "/helper/chat-stream",
+      api: "/api/chat-stream",
       body: { sessionId },
       initialMessages,
     });
